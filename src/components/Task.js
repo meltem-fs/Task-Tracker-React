@@ -6,7 +6,7 @@ const Task = ({item}) => {
 
 
   return (
-    <div onClick={() => setClick(!click)}>
+    <div className='main' onClick={() => setClick(!click)}>
       {click ? (
         <div>
           <h2 style={{ textDecoration: "line-through" }}>{item.text}</h2>

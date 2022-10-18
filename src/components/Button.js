@@ -4,8 +4,9 @@ const Button = ({ setShowAddTask, showAddTask }) => {
   return (
     <div>
       <button onClick={() => setShowAddTask(!showAddTask)}>
-        CLOSE ADD TASK BAR
+        {showAddTask ? " CLOSE TASK BAR" : " ADD TASK BAR"}
       </button>
+      <hr />
     </div>
   );
 };

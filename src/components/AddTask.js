@@ -14,7 +14,7 @@ const AddTask = ({ addTask }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} action="" className="container">
+    <form className="container_main" onSubmit={handleSubmit} action="">
       <label htmlFor="text">Task</label> <br />
       <input
         type="text"
@@ -22,6 +22,7 @@ const AddTask = ({ addTask }) => {
         value={text}
         placeholder="AddTask"
         onChange={(e) => setText(e.target.value)}
+        required
       />
       <br />
       <br />
@@ -32,9 +33,10 @@ const AddTask = ({ addTask }) => {
         value={day}
         placeholder="Add Day & Time"
         onChange={(e) => setDay(e.target.value)}
+        required
       />
       <br />
-      <input type="submit" value="save text" />
+      <input className="save" type="submit" value="save text" />
     </form>
   );
 };

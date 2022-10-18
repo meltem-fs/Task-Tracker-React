@@ -4,7 +4,7 @@ import Button from './Button';
 const Header = ({ setShowAddTask, showAddTask }) => {
   return (
     <>
-      <div>TASK-TRACKER</div>
+      <div className='header' >TASK-TRACKER</div>
       <Button showAddTask={showAddTask} setShowAddTask={setShowAddTask} />
     </>
   );

@@ -10,7 +10,7 @@ function App() {
 
   const [tasks, setTasks] = useState([{
   text:"homework",
-  day:"11.11.2020",
+  day:"18.10.2022",
   id:1,
   isDone:false
 
