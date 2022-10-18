@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({ setShowAddTask, showAddTask }) => {
   return (
     <div>
-      <button>CLOSE ADD TASK BAR</button>
+      <button onClick={() => setShowAddTask(!showAddTask)}>
+        CLOSE ADD TASK BAR
+      </button>
     </div>
-  )
-}
+  );
+};
 
 export default Button
